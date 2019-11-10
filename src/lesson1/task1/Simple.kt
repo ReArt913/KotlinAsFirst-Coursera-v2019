@@ -16,7 +16,9 @@ fun sqr(x: Int) = x * x
  *
  * Вычисление квадрата вещественного числа
  */
-fun sqr(x: Double) = x * x
+fun sqr(x: Double): Double {
+    return x * x
+}
 
 /**
  * Пример
@@ -76,7 +78,9 @@ fun lengthInMeters(sagenes: Int, arshins: Int, vershoks: Int): Double = TODO()
  * Пользователь задает угол в градусах, минутах и секундах (например, 36 градусов 14 минут 35 секунд).
  * Вывести значение того же угла в радианах (например, 0.63256).
  */
-fun angleInRadian(deg: Int, min: Int, sec: Int): Double = TODO()
+fun angleInRadian(deg: Int, min: Int, sec: Int): Double {
+   return deg * PI / 180 + min * PI/(180*60) + sec * PI/(180*60*60)
+}
 
 /**
  * Тривиальная
@@ -92,7 +96,10 @@ fun trackLength(x1: Double, y1: Double, x2: Double, y2: Double): Double = TODO()
  * Пользователь задает целое число, большее 100 (например, 3801).
  * Определить третью цифру справа в этом числе (в данном случае 8).
  */
-fun thirdDigit(number: Int): Int = TODO()
+fun thirdDigit(number: Int): Int {
+val firstOp = number % 1000
+    return firstOp/100
+}
 
 /**
  * Простая
